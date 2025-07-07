@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms e Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>cadastro de tabela</h1>
+            <p>atividade de html e css</p>
+        </header>
+
+        <section class="card">
+            <h2>formulário</h2>
+           <form>
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome" placeholder="digite seu nome aqui">
+
+            <label>Gênero</label>
+            <div class="inline">
+            <label><input type="radio" name="Gênero">masculino</label>
+            <label><input type="radio" name="Gênero">feminino</label>
+            <label><input type="radio" name="Gênero">outros</label>
+            </div>
+
+            <label for="cargo">Área de interesse</label>
+            <select id="cargo">
+                <option>Desenvolvedor</option>
+                <option>Analista</option>
+                <option>DBA</option>
+                <option>Testador</option>
+            </select>
+            
+            <label>unidade</label>
+            <div class="inline">
+                <label><input type="checkbox">Fortaleza</label>
+                <label><input type="checkbox">Juazeiro</label>
+                <label><input type="checkbox">Sobral</label>
+            </div>
+
+            <label for="apresentacao">Apresentação</label>
+            <textarea id="apresentacao" rows="3"></textarea>
+
+            <button type="submit">enviar</button>
+           </form>
+        </section>
+
+        <section class="card">
+            <h2>Medalhas</h2>
+            <table>
+                <caption>Quadro Olímpico</caption>
+                <thead>
+                    <tr>
+                         <th>País</th>
+                    <th class="ouro"🥇></th>
+                    <th class="prata"🥈></th>
+                    <th class="bronze"🥉></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brasil</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    </tr>
+                    <td class="total" colspan="4">total:12 Medalhas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>
