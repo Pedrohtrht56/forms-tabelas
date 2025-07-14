@@ -11,71 +11,82 @@
 <body>
     <div class="container">
         <header>
-            <h1>cadastro de tabela</h1>
-            <p>atividade de html e css</p>
+            <h1>Cadastro e Tabela</h1>
+            <P>Atividade de HTML e CSS</P>
         </header>
-
         <section class="card">
-            <h2>formulário</h2>
-           <form>
-            <label for="nome">nome</label>
-            <input type="text" id="nome" name="nome" placeholder="digite seu nome aqui">
+            <h2>Formulário</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="Nome" placeholder="digite seu nome aqui.">
+                <label>Genero</label>
+                <div class="inline">
+                    <label><input type="radio" name="genero">Masculino</label>
+                    <label><input type="radio" name="genero">Feminino</label>
+                    <label><input type="radio" name="genero">Outros</label>
+                </div>
+                <label for="cargo">Área de Interesse</label>
+                <select id="cargo">
+                    <option>Administração</option>
+                    <option>Recepicionista</option>
+                    <option>Analista</option>
+                    <option>Testador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Repositor</option>
+                </select>
 
-            <label>Gênero</label>
-            <div class="inline">
-            <label><input type="radio" name="Gênero">masculino</label>
-            <label><input type="radio" name="Gênero">feminino</label>
-            <label><input type="radio" name="Gênero">outros</label>
-            </div>
+                <label>Unidade</label>
+                <div class="inline">
+                    <label><input type="checkbox">Fortaleza</label>
+                    <label><input type="checkbox">Juazero</label>
+                    <label><input type="checkbox">Sobral</label>
+                </div>
 
-            <label for="cargo">Área de interesse</label>
-            <select id="cargo">
-                <option>Desenvolvedor</option>
-                <option>Analista</option>
-                <option>DBA</option>
-                <option>Testador</option>
-            </select>
-            
-            <label>unidade</label>
-            <div class="inline">
-                <label><input type="checkbox">Fortaleza</label>
-                <label><input type="checkbox">Juazeiro</label>
-                <label><input type="checkbox">Sobral</label>
-            </div>
-
-            <label for="apresentacao">Apresentação</label>
-            <textarea id="apresentacao" rows="3"></textarea>
-
-            <button type="submit">enviar</button>
-           </form>
+                <label for="apresentacao">Apresentacao</label>
+                <textarea id="apresentacao" rows="5"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
         <section class="card">
-            <h2>Medalhas</h2>
+            <h2> Medalha</h2>
             <table>
                 <caption>Quadro Olímpico</caption>
                 <thead>
-                    <tr>
-                         <th>País</th>
-                    <th class="ouro"🥇></th>
-                    <th class="prata"🥈></th>
-                    <th class="bronze"🥉></th>
-                </tr>
+                    <th>
+                        <th class="ouro">🥇</th>
+                        <th class="prata">🥈</th>
+                        <th class="bronze">🥉</th>
+                    </th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Brasil</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    </tr>
-                    <td class="total" colspan="4">total:12 Medalhas</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <td>Brasil</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Canadá</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="total">Total: 47 Medalhas</td>
+                </tr>
             </table>
+
+
         </section>
+
     </div>
+
 </body>
 
 </html>
